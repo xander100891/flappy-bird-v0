@@ -16,12 +16,6 @@ Train an AI agent to play Flappy Bird using reinforcement learning with Stable-B
 pipenv sync
 ```
 
-Activate environment:
-
-```bash
-pipenv shell
-```
-
 ## 🧠 Training
 
 ```bash
