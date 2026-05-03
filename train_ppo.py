@@ -8,13 +8,14 @@ from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback
 
 
 MODEL_DIR = "models/ppo"
-LOG_DIR = "logs/ppo"
 BEST_DIR = "models/ppo/best"
+CHECKPOINT_DIR = "models/ppo/checkpoints"
+LOG_DIR = "logs/ppo"
 
 os.makedirs(MODEL_DIR, exist_ok=True)
-os.makedirs(LOG_DIR, exist_ok=True)
 os.makedirs(BEST_DIR, exist_ok=True)
-
+os.makedirs(CHECKPOINT_DIR, exist_ok=True)
+os.makedirs(LOG_DIR, exist_ok=True)
 
 def make_env():
     return Monitor(gym.make("FlappyBird-v0"))
