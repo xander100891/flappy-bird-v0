@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore everything
+models/*
+logs/*
+videos/*
+
+# But allow folders to exist
+!models/
+!models/ppo/
+!models/ppo/best/
+
+# Allow ONLY the best model
+!models/ppo/best/best_model.zip
